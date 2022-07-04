@@ -1,2 +1,2 @@
 # Jazmin
-Proyecto de tienda de lenceria
+Proyecto de tienda de ropa
