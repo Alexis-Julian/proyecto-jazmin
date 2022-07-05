@@ -206,7 +206,7 @@ li,ul{
     grid-area: main;
     grid-template-rows: repeat(2,1fr);
     height: 200vh;
-    --variable--color: bisque;
+    --variable--color: white;
     gap: 10px;
     
 }
@@ -483,7 +483,18 @@ li,ul{
 .tarj1{
     grid-area: tarj1;
     background-color:var(--variable--color);
+    background-image: url(./images/lujogris.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 2s;
 }
+.tarj1:hover{
+    background-image: url(./images/vestidobla.png);
+    transform: translateY(-10px) scale(1.05);
+    opacity: 0.5;;
+}
+
 .tarj2{
     grid-area: tarj2;
     background-color:var(--variable--color);
@@ -534,10 +545,10 @@ li,ul{
 .tarj6{
     background-color:var(--variable--color);
     grid-area: tarj6;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    transition: all 300ms;
+    transition: all 2s;
     border: solid black 1px;
     border-radius: 1%;
     background-image: url(./images/deportivoazule.png);
@@ -546,8 +557,10 @@ li,ul{
 }
 
 .tarj6:hover{
+    
     transform: translateY(-10px) scale(1.05);
     opacity: 0.5;
+    background-image: url(./images/deportivogris.png);
     
 }
    
