@@ -327,56 +327,12 @@ li,ul{
     display: grid;
     grid-template-areas: 
     "tarj1  tarj4 tarj5 tarj6"
-    "tarj2  tarj4 tarj5 tarj7" 
-    "tarj3  tarj4 tarj5 tarj8"
+    "tarj1  tarj4 tarj5 tarj6" 
+    "tarj1  tarj4 tarj5 tarj6"
     "tarj9  tarj9 tarj9 tarj9";
     gap: 10px;
 }
-.main__section--biblogriafia{
-    max-height: 50rem;
-    outline: 1px solid gray;
-    border-radius: 10%;
-    display: grid;
-    height: 100vh;
-    display: grid;
-    grid-template-rows:repeat(3, 1fr);
-    opacity: 0.5;
-    background-color: bisque;
-    align-items: center;
-    justify-items: center;
-    outline: thick double #FFB6AE;
 
-}
-.section__acerca>h3{
-    margin: 0;
-    font-size: 4.5em;
-}
-.section__nosotros>p{
-    line-height: 1.5em;
-    text-align: center;
-    margin: 0;
-    font-size: 1.1em;
-}
-
-.section__relleno{
-    grid-row-start: 3;
-    background-color: gray;
-}
-.section__catalogo{
-    height: 100%;
-    width: 100%;
-}
-.catalogo__elementos{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-}
-.catalogo__lista{
-    font-size: 3rem;
-}
 /* TARJETAS----TIENDAS*/
 .contenedort{
     height: 100%;
@@ -484,26 +440,22 @@ li,ul{
     grid-area: tarj1;
     background-color:var(--variable--color);
     background-image: url(./images/lujogris.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: all 2s;
+    border: solid black 1px;
 }
 .tarj1:hover{
     background-image: url(./images/vestidobla.png);
     transform: translateY(-10px) scale(1.05);
-    opacity: 0.5;;
+    /* opacity: 0.5; */
+
 }
 
+
+
 .tarj2{
-    grid-area: tarj2;
-    background-color:var(--variable--color);
-}
-.tarj3{
-    grid-area: tarj3;
-    background-color:var(--variable--color);
-}
-.tarj4{
     background-color:var(--variable--color);
     background-image: url(./images/formal-removebg-preview.png);
     grid-area: tarj4;
@@ -513,16 +465,33 @@ li,ul{
     border: solid black 1px;
     border-radius: 1%;
     transition: all 2s;
+    position: relative;
+    
     
 
 }
-.tarj4:hover{
+.tarj2:hover{
     background-image: url(./images/formalinda-removebg-preview.png);
     transform: translateY(-10px) scale(1.05);
     opacity: 0.5;;
 
 }
-.tarj5{
+
+.aqe{
+    position: absolute;
+    display: block;
+    inset: 0;
+    z-index: 0;
+}
+.aqe::before{
+    content: "";
+    /* background-color: black; */
+    width: 300px;
+    height: 300px;
+    position:absolute;
+}
+
+.tarj3{
     background-color:var(--variable--color);  
     grid-area: tarj5;
     background-image: url(./images/Deprotiva.png);
@@ -534,7 +503,7 @@ li,ul{
     border-radius: 1%;
  
 }
-.tarj5:hover{
+.tarj3:hover{
     transform: translateY(-10px) scale(1.05);
     opacity: 0.5;;
     background-image: url(./images/deportiva2.png);
@@ -542,10 +511,10 @@ li,ul{
 }
 
 
-.tarj6{
+.tarj4{
     background-color:var(--variable--color);
     grid-area: tarj6;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: all 2s;
@@ -556,29 +525,12 @@ li,ul{
 
 }
 
-.tarj6:hover{
-    
+.tarj4:hover{
     transform: translateY(-10px) scale(1.05);
     opacity: 0.5;
     background-image: url(./images/deportivogris.png);
     
 }
-   
-.tarj7{
-    background-color:var(--variable--color);
-    grid-area: tarj7;
-
-}
-.tarj8{
-    background-color:var(--variable--color);
-    grid-area: tarj8;
-
-}
-.tarj9{
-    background-color: var(--variable--color);
-    grid-area: tarj9;
-}
-
 /*------------------------SECCION FOOTER--------------------------*/
 .footer{
     grid-area: footer;
