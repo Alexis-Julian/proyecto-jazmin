@@ -5,7 +5,7 @@ body,html{
     font-size: 16px;
     background-image: repeating-linear-gradient(90deg, #fff, #fff 20px, #fbfbfb 20px, #fbfbfb 40px);
     /* height: 100em; */
-    font-family: 'Patrick Hand', cursive;
+    /* font-family: 'Patrick Hand', cursive; */
     
 }
 
@@ -61,8 +61,8 @@ li,ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-area: header;
-    background-color: rgb(63, 78, 79);
-    /* outline: thick double wh; */
+    background-color: #FFB6AE;
+    outline: thick double wh;
     box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 }
 .header__register{
@@ -118,6 +118,7 @@ li,ul{
     justify-self: center;
     -webkit-text-stroke: 0.5px black;
     color:white;
+    text-transform: uppercase;
     transition: 0.5s;
     
 }
