@@ -65,6 +65,7 @@ li,ul{
     background-color: rgb(63, 78, 79);
     outline: thick double wh;
     box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+    align-items: center;
 }
 .header__register{
     background-color: #FFB6AE;
@@ -72,43 +73,47 @@ li,ul{
     grid-area: headerr;
 }
 /*------------------------ICONO NAVBAR--------------*/
-.header__navbar{
-    display: flex;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-.header__icons--navbar{
-    height: 15px;
-    
+#checkbox{
+    display: none;
 }
 
-.gg-menu {
+.header__nav--visiblity{
+    visibility: collapse;
+    background-color: white;
+    position: absolute;
+    left: 0;
+/*     height: 100vh;
+    width: 100%; */
+}
+
+#checkbox:checked ~ *.header__nav--visiblity{
+    visibility: visible;
+}
+
+.icon_nav{
     color:rgba(255, 255, 255, 0.7);
-    transition: 1.5s;
-}
-.gg-menu:hover{
-    transform: rotate(360deg);
-}
-.gg-menu,
-.gg-menu::after,
-.gg-menu::before {
+}  
+.icon_nav,
+.icon_nav::after,
+.icon_nav::before {
     box-sizing: border-box;
     position: relative;
     display: inline-block;
     width: 20px;
     height: 2px;
     border-radius: 3px;
-    background: currentColor
+    background: currentColor;
 }
-.gg-menu::after,
-.gg-menu::before {
+.icon_nav::after,
+.icon_nav::before {
     content: "";
     position: absolute;
     top: -6px
 }
-.gg-menu::after {
-    top: 6px
+.icon_nav::after{
+    top: 6px;
 }
+
 /*-----------------TITULO DE LA PAGINA------------------*/
 .enlace,.header__title{
 
@@ -132,7 +137,6 @@ li,ul{
 .header__icons{
     justify-content: end;
     display: flex;
-    margin-top: 30px;
     justify-content: space-evenly;
 }
 .header__icons--account,.header__icons--bag{
