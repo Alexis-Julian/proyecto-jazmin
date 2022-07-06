@@ -331,6 +331,7 @@ li,ul{
     "tarj1  tarj4 tarj5 tarj6"
     "tarj9  tarj9 tarj9 tarj9";
     gap: 10px;
+    position: relative;
 }
 
 /* TARJETAS----TIENDAS*/
@@ -436,6 +437,8 @@ li,ul{
 }
 
 /* --------------TARJETAS--------------------- */
+  
+
 .tarj1{
     grid-area: tarj1;
     background-color:var(--variable--color);
@@ -445,11 +448,59 @@ li,ul{
     background-repeat: no-repeat;
     transition: all 2s;
     border: solid black 1px;
+    position: relative;
+    overflow: hidden;
+
 }
 .tarj1:hover{
     background-image: url(./images/vestidobla.png);
     transform: translateY(-10px) scale(1.05);
     /* opacity: 0.5; */
+
+}
+
+.tarj1::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-top: 300px solid transparent;
+    border-right: 300px solid   white;
+    border-bottom: 300px solid white;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transition: all 2s;
+    top: 300px;
+}
+
+.tarj1:hover::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-top: 300px solid transparent;
+    border-right: 300px solid   white;
+    border-bottom: 300px solid white;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    transform: translateY(-300px);
+
+}
+
+
+.tarj1:hover .triangulo:hover{
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid transparent;
+    border-left: 50px solid black;
+    border-bottom: 50px solid black;
+    opacity: 1;
+
 
 }
 
