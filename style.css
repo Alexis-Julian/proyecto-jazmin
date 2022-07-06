@@ -3,7 +3,8 @@ body,html{
     margin: 0;
     padding: 0;
     font-size: 16px;
-    background-image: repeating-linear-gradient(90deg, #fff, #fff 20px, #fbfbfb 20px, #fbfbfb 40px);
+    background-color: rgb(250, 250, 246);
+    /* background-image: repeating-linear-gradient(90deg, #fff, #fff 20px, #fbfbfb 20px, #fbfbfb 40px); */
     /* height: 100em; */
     /* font-family: 'Patrick Hand', cursive; */
     
@@ -61,7 +62,7 @@ li,ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-area: header;
-    background-color: #FFB6AE;
+    background-color: rgb(63, 78, 79);
     outline: thick double wh;
     box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
 }
@@ -330,7 +331,7 @@ li,ul{
     "tarj1  tarj4 tarj5 tarj6" 
     "tarj1  tarj4 tarj5 tarj6"
     "tarj9  tarj9 tarj9 tarj9";
-    gap: 10px;
+    gap: 20px;
     position: relative;
 }
 
@@ -447,7 +448,7 @@ li,ul{
     background-position: center;
     background-repeat: no-repeat;
     transition: all 2s;
-    border: solid black 1px;
+    /* border: solid black 1px; */
     position: relative;
     overflow: hidden;
 
@@ -461,48 +462,24 @@ li,ul{
 
 .tarj1::before{
     content: "";
+    background-color: rgb(63, 78, 79);
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    /* Opacity-0.8 */
     position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 300px solid transparent;
-    border-top: 300px solid transparent;
-    border-right: 300px solid   white;
-    border-bottom: 300px solid white;
-    position: absolute;
-    bottom: 0;
-    opacity: 1;
-    transition: all 2s;
-    top: 300px;
+    bottom: 800px;
+    transition:  transform 2s;
+    
+
 }
 
 .tarj1:hover::before{
     content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 300px solid transparent;
-    border-top: 300px solid transparent;
-    border-right: 300px solid   white;
-    border-bottom: 300px solid white;
-    position: absolute;
-    bottom: 0;
-    opacity: 1;
-    transform: translateY(-300px);
-
+    opacity: 0.8;
+    transform: translateY(800px);
 }
 
-
-.tarj1:hover .triangulo:hover{
-    width: 0;
-    height: 0;
-    border-right: 50px solid transparent;
-    border-top: 50px solid transparent;
-    border-left: 50px solid black;
-    border-bottom: 50px solid black;
-    opacity: 1;
-
-
-}
 
 
 
@@ -513,7 +490,7 @@ li,ul{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: solid black 1px;
+    /* border: solid black 1px; */
     border-radius: 1%;
     transition: all 2s;
     position: relative;
@@ -550,7 +527,7 @@ li,ul{
     background-position: center;
     background-repeat: no-repeat;
     transition: all 2s;
-    border: solid black 1px;
+    /* border: solid black 1px; */
     border-radius: 1%;
  
 }
@@ -569,7 +546,7 @@ li,ul{
     background-position: center;
     background-repeat: no-repeat;
     transition: all 2s;
-    border: solid black 1px;
+    /* border: solid black 1px; */
     border-radius: 1%;
     background-image: url(./images/deportivoazule.png);
     
