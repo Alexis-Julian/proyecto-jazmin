@@ -8,98 +8,94 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
-<body class="bg-dark">
-    <div class="container-fluid-xl">
-        <header>
-            <nav class="navbar  navbar-expand-lg bg-light navbar-light border border-danger  border-2 rounded-end">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Galeria</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </header>
-        <main >
-            <div class="container-fluid-xl mt-5 col-md-12">
-              <!-- EMPIEZA FILA -->
-                <div class="row">
-                    <article class="card col-md-3">
-                            <img src="https://picsum.photos/800/900?random=1" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                    </article>
-                    <article class="card col-md-3">
-                            <img src="https://picsum.photos/800/900?random=2" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                    </article>
-
-                    <article class="card col-md-3">
-                            <img src="https://picsum.photos/800/900?random=3" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                    </article>
-
-                    <article class="card col-md-3">
-                            <img src="https://picsum.photos/800/900?random=4" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                    </article>
-                </div>
-                <!-- TERMINA FILA -->
-
-                <!-- EMPIEZA FILA -->
-              <div class="container-fluid-xl mt-5 col-md-12 d-flex justify-content-center bg-light">
-                <div class="row ">
-                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="https://picsum.photos/800/900?random=5" class="d-block " alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://picsum.photos/800/900?random=6" class="d-block " alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://picsum.photos/800/900?random=7" class="d-block  " alt="...">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-                <!-- TERMINA FILA -->
-              </div>
+<body style="background-color:white">
+    <div class="container-fluid-xl -b" style="margin:10px auto;">
+        <div class="container-fluid">
+            <div class="row">
+                <header>
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark rounded-end border border-dark" style="box-shadow: 5px 5px 5px black;"> 
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Galería</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Contactos</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </header>
             </div>
-            
+        </div>
+        <main>
+            <div class="container-fluid-xl col-lg-12"> 
+                <div class="row mt-5  d-flex justify-content-center" style="column-gap:30px; row-gap: 30px;">
+                    <!-- ####################################################### -->
+                    <div class="card col-lg-3 col-md-5 p-3">
+                        <img src="https://picsum.photos/900/800?random=3" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Mas informacion</a>
+                        </div>
+                      </div>
+                      <!-- ####################################################### -->
+                      <div class="card col-lg-3 col-md-5 p-3">
+                        <img src="https://picsum.photos/900/800?random=2" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Mas informacion</a>
+                        </div>
+                      </div>
+                      <!-- ####################################################### -->
+                      <div class="card col-lg-3 col-md-5 p-3" >
+                        <img src="https://picsum.photos/900/800?random=1" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Mas informacion</a>
+                        </div>
+                      </div>
+                      <!-- ####################################################### -->
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5 col-md-12 " style="max-width: 800px;">
+                <div class="row">
+                    <!-- ################################# -->
+                    <!-- #################################### -->
+                    <div id="carouselExampleControls" class="carousel slide col-12" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://picsum.photos/900/800?random=6" class="d-block w-100 rounded-4 border border-primary" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://picsum.photos/900/800?random=7" class="d-block w-100 rounded-4 border border-secondary" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://picsum.photos/900/800?random=8" class="d-block w-100 rounded-4 border border-success" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- ######################################################### -->
+                </div>
+            </div>
         </main>
-        <footer>
-
-        </footer>
-    </div>
-    
 </body>
 </html>
